@@ -1,5 +1,6 @@
 import {InstantSearch} from "react-instantsearch";
-import {SearchClient, algoliasearch} from "algoliasearch";
+import {algoliasearch} from "algoliasearch";
+import { type SearchClient } from '@algolia/client-search'
 
 function App() {
   const searchClient: SearchClient = algoliasearch('appId', 'apiKey')
