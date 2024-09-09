@@ -1,4 +1,4 @@
-import {Configure, InstantSearch} from "react-instantsearch";
+import {InstantSearch} from "react-instantsearch";
 import {SearchClient, algoliasearch} from "algoliasearch";
 
 function App() {
@@ -9,13 +9,7 @@ function App() {
     <InstantSearch
       indexName="indexName"
       searchClient={searchClient}
-    >
-      <Configure
-        // types for this properties are not defined
-        hitsPerPage={3}
-        analyticsTags={['suggestions']}
-      />
-    </InstantSearch>
+    />
   )
 
 }
